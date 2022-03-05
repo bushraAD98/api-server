@@ -5,11 +5,13 @@ const superteset = require('supertest');
 const request = superteset(server.app);
 const {db} = require('../src/models/index');
 
-beforeAll( async () =>{
+beforeAll( async () =>{ 
+    //to connect db & test it
     await db.sync();
 })
 afterAll( async () =>{
-    await db.drop();
+    await db.drop(); 
+    // to disconnect with db
 })
 
 

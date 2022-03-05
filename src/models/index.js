@@ -39,8 +39,8 @@ let sequelizeOptions = process.env.NODE_ENV === 'production' ? {
 
   module.exports = {
     db: sequelize, 
-    foodCollect : foodCollection ,
-    clothesCollect: clothesCollection
+    foodCollection : foodCollection ,
+    clothesCollection: clothesCollection
 }
 
 
